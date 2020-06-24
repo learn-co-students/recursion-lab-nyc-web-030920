@@ -39,7 +39,7 @@ function printString(myString) {
 }
 
 printString("pizza");
-// p i z z a
+p i z z a
 ```
 
 It works! Time to pack up and head home.
