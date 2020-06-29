@@ -8,3 +8,11 @@ function printString(string){
         return true
     }
 }
+
+function reverseString(string){
+    if (string !== ''){
+        return reverseString(string.substring(1)) + string[0]
+    } else {
+        return string
+    }
+}
