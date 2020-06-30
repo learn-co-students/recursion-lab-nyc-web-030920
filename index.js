@@ -42,6 +42,15 @@ function maxOf(array){
     if(array.length === 1){
         return array[0]
     }else{
-        return Math.max(array.shift(), highest(array))
+        return Math.max(array.shift(), maxOf(array))
     }
+}
+
+function includesNumber(array, number){
+    if(array[0] === number){
+        return true
+    } else if(array.length > 1) {
+        return includesNumber(array.slice(1), number)
+    }
+    return false
 }
