@@ -28,3 +28,12 @@ function isPalindrome(string){
     }
     return false
 }
+
+function addUpTo(array, index){
+    if(index > 0){
+        console.log(array[index])
+        return array[index] + addUpTo(array, --index)
+    } else {
+        return array[index]
+    }
+}
